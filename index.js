@@ -1,13 +1,9 @@
-const axios = require("axios");
 const fs = require("fs");
 const express = require("express");
 const app = express();
 const cors = require("cors");
 const videosRoutes = require("./routes/videos");
 require("dotenv").config();
-
-const API_URL = "https://project-2-api.herokuapp.com";
-const API_KEY = process.env.API_KEY;
 
 app.use(express.static("./public"));
 app.use(express.json());
